@@ -1,6 +1,14 @@
 import logo from './logo-01-01.png';
 import './App.css';
 
+function combinedClick1(){
+  openScript1();
+  valueControl();
+}
+
+function openScript1() {
+  window.open('registerP.js', '_blank');
+}
 function boxControl() {
 
   const c1 = document.getElementById("c1");
@@ -22,6 +30,21 @@ function boxControl() {
   }
 
 }
+function valueControl() {
+  const n1= document.getElementById("name").value.trim();
+  const m1= document.getElementById("mail1").value.trim();
+  const n2= document.getElementById("nickname").value.trim();
+  const p= document.getElementById("passW").value.trim();
+  const f= document.getElementById("fakulte").value.trim();
+  const c= document.getElementById("classNo").value.trim();
+  const r= document.getElementById("rules").value.trim();
+
+  if (n1 && m1 && n2 && p && f && c && r!=="") {
+    //Kayıt olma sitesinden başka yere yönlendirilecek
+  } else {
+    alert("Eksik değer girilmiş")
+  }
+}
 function App() {
 
   return (
@@ -34,31 +57,35 @@ function App() {
         <img src={logo} className="App-logo" alt="logopipi" />
 
         <p>
-          Ad Soyad: <input/> <br/>
-          E-Posta: <input/> @firat.edu.tr <br/>
-          Kullanıcı Adı: <input/> <br/>
-          Şifre: <input/> <br/>
-          Okuduğun Fakülte <input type={"search"}/> <br/>
-          Kaçıncı Sınıf: <input  type={"number"} min="1" max="7"/> <br/>
-          Mail bildirim almak istiyorum <input type={"checkbox"} id={"c1"} onClick={boxControl} /> <br/>
-
-          <p id="t1" style={{ display: "none" }}>
-          Bildirim alacağım mail adresi farklı olmasını istiyorum <input type={"checkbox"} id={"c2"} onClick={boxControl}/> <br/>
-          </p>
-
-          <p id="t2" style={{ display: "none" }}>
-          &nbsp;&nbsp;İkinci Mail adresi <input  type={"email"}/> <br/>
-          </p>
-          <a
+          <p id={"big"}>
+          Ad Soyad: <input id={"name"} defaultValue={null}/> <br/>
+          E-Posta: <input id={"mail1"}/> @firat.edu.tr <br/>
+          Kullanıcı Adı: <input id={"nickname"}/> <br/>
+          Şifre: <input id={"passW"} type={"password"}/> <br/>
+          Okuduğun Fakülte <input id={"fakulte"} type={"search"}/> <br/>
+          Kaçıncı Sınıf: <input id={"classNo"} type={"number"} min="1" max="7"/> <br/>
+            <a
               className="App-link"
               href="https://reactjs.org"
               target="_blank"
               rel="noopener noreferrer"
           >
-            KURALLARI
+            Kuralları
           </a>
-          &nbsp;okudum ve kabul ediyorum <input type={"checkbox"} id={"c3"}/> <br/>
-          <input type={"button"} value={"Kayıt Ol"}/>
+          &nbsp;okudum ve kabul ediyorum <input type={"checkbox"} id={"c3"}/> <br/> <br/>
+
+            Mail bildirim almak istiyorum <input type={"checkbox"} id={"c1"} onClick={boxControl} /> <br/>
+          </p>
+          <p id="t1" style={{ display: "none" }}>
+            Farklı maile bildirim gönder <input type={"checkbox"} id={"c2"} onClick={boxControl}/> <br/>
+          </p>
+
+          <p id="t2" style={{ display: "none" }}>
+            İkinci Mail adresi <input  type={"email"}/> <br/>
+          </p>
+
+          <input id={"rules"} type={"button"} value={"Kayıt Ol"} onClick={combinedClick1} />
+
         </p>
 
       </header>
