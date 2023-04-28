@@ -1,3 +1,4 @@
+
 .App {
   text-align: left;
 }
@@ -36,4 +37,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#rules{
+  height: 5vmin;
+  width: fit-content;
+  font-size: 15px;
+}
+#name{
+
+}
+input[type=text] {
+  border: 3px solid transparent;
+  transition: border-color 0.5s ease-in-out;
+}
+
+input[type=text]:focus {
+  border-color: #555;
 }
