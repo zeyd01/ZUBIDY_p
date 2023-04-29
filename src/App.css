@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.butonlar{
+  flex-direction: row;
+  outline: none;
+  border: none;
+  height: 100px;
+
+}
+ .buton{
+   width: 100px;
+ }
