@@ -81,20 +81,21 @@ function register() {
         </div>
     );
 }
+
 function boxControl() {
 
     const c1 = document.getElementById("c1");
-    const c2=document.getElementById("c2");
+    const c2 = document.getElementById("c2");
     const t1 = document.getElementById("t1");
-    const t2=document.getElementById("t2");
+    const t2 = document.getElementById("t2");
 
-    if (c1.checked === true){
+    if (c1.checked === true) {
 
         t1.style.display = "block";
     } else {
         t1.style.display = "none";
     }
-    if (c2.checked && c1.checked === true){
+    if (c2.checked && c1.checked === true) {
 
         t2.style.display = "block";
     } else {
@@ -102,16 +103,17 @@ function boxControl() {
     }
 
 }
-function valueControl() {
-    const n1= document.getElementById("txtName").value.trim();
-    const m1= document.getElementById("txtEmail").value.trim();
-    const n2= document.getElementById("txtNickname").value.trim();
-    const p= document.getElementById("txtPassword").value.trim();
-    const p2= document.getElementById("txtConfirmPassword".value.trim());
-    const f= document.getElementById("txtFakulte").value.trim();
-    const r= document.getElementById("rules").value.trim();
 
-    if (n1 && m1 && n2 && p && p2 && f && r!=="") {
+function valueControl() {
+    const n1 = document.getElementById("txtName").value.trim();
+    const m1 = document.getElementById("txtEmail").value.trim();
+    const n2 = document.getElementById("txtNickname").value.trim();
+    const p = document.getElementById("txtPassword").value.trim();
+    const p2 = document.getElementById("txtConfirmPassword".value.trim());
+    const f = document.getElementById("txtFakulte").value.trim();
+    const r = document.getElementById("rules").value.trim();
+
+    if (n1 && m1 && n2 && p && p2 && f && r !== "") {
         //Kayıt olma sitesinden başka yere yönlendirilecek
     } else {
         alert("Eksik değer girilmiş")
