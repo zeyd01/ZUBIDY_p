@@ -21,9 +21,9 @@ function App() {
           </p>
 
             <fieldset className="butonlar">
-            <input id={"buton"} type={"button"} value={"Register Page"}  onClick={() => window.open('/register', '_blank')}/>
-            <input id={"buton"} type={"button"} value={"Main Page"} onClick={() => window.open('/main', '_blank')}/>
-            <input id={"buton"} type={"button"} value={"Profile Page"} onClick={() => window.open('/profile', '_blank')}/>
+            <input id={"buton1"} type={"button"} value={"Register Page"}  onClick={() => window.open('/register', '_blank')}/>
+            <input id={"buton2"} type={"button"} value={"Main Page"} onClick={() => window.open('/main', '_blank')}/>
+            <input id={"buton3"} type={"button"} value={"Profile Page"} onClick={() => window.open('/profile', '_blank')}/>
             </fieldset>
 
         </header>

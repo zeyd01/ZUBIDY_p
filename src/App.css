@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border:none ;
+  outline: none;
 }
 
 .App-logo {
@@ -22,6 +24,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border: none;
+  outline: none;
 }
 
 .App-link {
@@ -37,12 +41,21 @@
   }
 }
 .butonlar{
-  flex-direction: row;
-  outline: none;
-  border: none;
-  height: 100px;
+  border:none;
+
 
 }
- .buton{
-   width: 100px;
- }
+.butonlar input[type="button"]{
+  flex-direction: row;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+  background-color:deeppink;
+  color: white;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.butonlar input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
