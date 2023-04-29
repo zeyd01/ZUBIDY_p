@@ -1,0 +1,80 @@
+.Register-header{
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color:white;
+    min-height: 100vh;
+}
+
+.kuralMail-field{
+    line-height: 20px;
+    border: none;
+
+}
+.rulesCss{
+
+}
+
+.field-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color:white;
+    border: none;
+
+}
+
+
+.float-label-field {
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 450px;
+    height: 70px;
+    box-sizing:border-box;
+
+}
+
+.float-label-field input {
+    outline: none;
+    background-color: #282c34;
+    color:white;
+    width: 100%;
+    font-size: 18px;
+    padding: 30px 0 10px 8px;
+    border: solid 1px lightgrey;
+}
+
+.float-label-field label {
+    opacity: 0.5;
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    transition: all 0.2s ease;
+    color:lightgrey;
+    font-size: 18px;
+}
+
+.float-label-field.focus label {
+    opacity: 1 !important;
+    color: deeppink;
+
+}
+.float-label-field.focus input {
+    border: solid 2px deeppink;
+
+}
+.float-label-field.float label {
+    opacity: 0.5;
+    top: 0;
+    font-size: 60%;
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
