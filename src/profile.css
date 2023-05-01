@@ -1,0 +1,123 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #282c34;
+}
+
+/* navbar */
+.navbar {
+    background-color: rgba(169, 169, 169, 0.401);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-home {
+    display: inline;
+    margin-left: 0.75rem;
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+.search-bar-input {
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.notification-button {
+    border-radius: 5px;
+    border: none;
+    background-color: darkgray;
+}
+
+/* header */
+.header {
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #282c34;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.profile-picture {
+    border: solid 1px white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.profile-picture-text {
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.header-info-buttons {
+    margin: 1rem;
+}
+
+.header-button {
+    color: white;
+    margin-right: 0.25rem;
+    background-color: #282c34;
+}
+
+/* section-1 */
+.section-buttons {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    margin-left: 3rem;
+}
+
+.section-1-button {
+    color: white;
+    border: solid 0.5px deeppink;
+    margin-right: 0.25rem;
+    background-color: #282c34;
+    width: 100px;
+    text-align: center;
+}
+
+/* section-2 */
+.section-2 {
+    border: solid 1px white;
+    color: white;
+    background-color: #282c34;
+    min-height: 400px;
+    margin-bottom: 1.3rem;
+}
+
+.main-section-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* footer */
+.footer {
+    display: flex;
+}
+
+.footer-text {
+    margin-right: 0.05rem;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    height: 50px;
+}
