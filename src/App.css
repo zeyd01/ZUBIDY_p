@@ -46,6 +46,7 @@
 
 }
 .butonlar input[type="button"]{
+  font-size: 1.1rem;
   flex-direction: row;
   padding: 10px 10px 10px 10px;
   margin-right: 10px;

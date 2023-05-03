@@ -1,4 +1,4 @@
-import logo from './logo-01-01.png';
+import logo from '../src/images/zubidy-logo.png';
 import './App.css';
 
 
