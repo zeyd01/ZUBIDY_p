@@ -4,27 +4,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    font-size: calc(10px + 2vmin);
+    font-size: 1.5rem;
     color:white;
     min-height: 100vh;
 }
 
 .kuralMail-field{
+    margin-bottom: 2rem;
     line-height: 20px;
     border: none;
 
 }
-.rulesCss{
-
-}
 
 .field-header {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     background-color: #282c34;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 1.5rem;
     color:white;
     border: none;
 
@@ -32,6 +32,7 @@
 
 
 .float-label-field {
+    margin-top: .5rem;
     border: none;
     outline: none;
     position: relative;
