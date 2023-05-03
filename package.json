@@ -16,6 +16,9 @@
     "reactstrap": "^9.1.9",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "compass": "^0.1.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
