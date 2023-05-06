@@ -17,7 +17,7 @@ function register() {
 
     return (
         <div className="register">
-            <header className="Register-header">
+            <header className="register-header">
 
                 <fieldset className="field-header">
                     <h3>Kayıt Ol</h3>
@@ -105,6 +105,8 @@ function boxControl() {
     }
 
 }
+
+// eslint-disable-next-line no-unused-vars
 function valueControl() {
     const n1= document.getElementById("txtName").value.trim();
     const m1= document.getElementById("txtEmail").value.trim();
