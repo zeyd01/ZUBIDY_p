@@ -9,6 +9,9 @@ import {
 } from 'reactstrap';
 import notificationIcon from "../src/images/notification-icon.svg";
 import homeIcon from "../src/images/home-icon.svg";
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter } from 'react-router-dom';
+// import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function Profile() {
     return (
@@ -29,8 +32,8 @@ function Profile() {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </div>
-                <div className='search-bar'>
-                    <input className='search-bar-input' placeholder="Search" />
+                <div className="search-bar">
+                    <input type="text" className='search-bar-input' placeholder="Search" />
                 </div>
                 <div className='notification-icon'>
                     <button className='notification-button'>
@@ -46,7 +49,7 @@ function Profile() {
                     </div>
                     <div className='header-info-buttons'>
                         <div className='header-info'>
-                            <p>Kullanıcı Hakkındaki Bilgier</p>
+                            <p>Kullanıcı Hakkındaki Bilgiler</p>
                             <ul>
                                 <li>Puanı ve Rankı</li>
                                 <li>Hangi Fakülte</li>
@@ -86,4 +89,22 @@ function Profile() {
     );
 }
 
+// function Router() {
+//   return (
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<App />} />
+//           <Route path="/register" element={<Register />} />
+//           <Route path="/main" element={<Mainpage />} />
+//           <Route path="/profile" element={<Profile />} />
+//         </Routes>
+//       </BrowserRouter>
+//   );
+// }
+
 export default Profile;
+
+// KULLANICIYI TAKIP EDINCE "TAKIP ET" YERINE TIK ISARETI 
+// GIBI BIR SEY CIKACAK
+
+// DIGER BUTONLAR ICIN DE AYNI SEKILDE
