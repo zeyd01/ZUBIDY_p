@@ -46,13 +46,14 @@
 
 }
 .butonlar input[type="button"]{
+  font-size: 1.1rem;
   flex-direction: row;
   padding: 10px 10px 10px 10px;
   font-size: 1rem;
   margin-right: 10px;
   background-color:deeppink;
   color: white;
-  border-radius: 12px;
+  border-radius: 18px;
   transition-duration: 0.4s;
 }
 

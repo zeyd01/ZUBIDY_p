@@ -1,6 +1,6 @@
 .main {
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -26,7 +26,17 @@
     border-radius: 15px;
     color: white;
     background-color: black;
-    padding: 0.5rem;
+    padding: 0.4rem;
+}
+
+.search-bar:hover input {
+    width: 30rem;
+    /* transition: 0.5s; */
+}
+
+.search-bar input {
+    width: 15rem;
+    transition: 0.5s;
 }
 
 .notification-button {
@@ -76,19 +86,20 @@
 
 /* section-1 */
 .section-buttons {
-    margin-top: 1.3rem;
+    margin-top: 1.25rem;
     margin-bottom: 1.3rem;
     margin-left: 3rem;
 }
 
 .section-1-button {
     color: white;
-    border: solid 0.5px deeppink;
+    /* border: solid 0.5px deeppink; */
     margin-right: 0.25rem;
     background-color: #282c34;
     width: 100px;
     text-align: center;
 }
+
 
 /* section-2 */
 .section-2 {
