@@ -79,3 +79,19 @@
     transition: all 0.2s ease;
     font-weight: bold;
 }
+
+input[type="button"]{
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color:deeppink;
+    color: white;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    color: black;
+}
