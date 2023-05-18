@@ -1,29 +1,36 @@
-require('dotenv').config();
+const mysql = require('mysql2');
 
-const sql = require('mssql');
+// Bağlantı yapılandırması
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'zubidy'
+});
 
-const config = {
-
-    server: 'DESKTOP-6JLFEJ7',
-    database: 'osman',
-    port: 51638,
-    options: {
-        encrypt: false,
-        trustedConnection: true
+// Bağlantıyı aç
+connection.connect((err) => {
+    if (err) {
+        console.error('Bağlantı hatası:', err);
+        return;
     }
-};
+    console.log('MySQL veritabanına başarıyla bağlandı.');
 
-async function testConnection() {
-    try {
-        await sql.connect(config);
-        const result = await sql.query('SELECT 1 AS value');
-        console.log('Database connected successfully');
-        console.log('Result:', result.recordset[0].value);
-    } catch (err) {
-        console.error('Error connecting to database:', err);
-    } finally {
-        sql.close();
-    }
-}
+    // Sorguyu gerçekleştir
+    connection.query('SELECT * FROM kullanici', (err, results) => {
+        if (err) {
+            console.error('Sorgu hatası:', err);
+            return;
+        }
+        console.log('Sonuçlar:', results);
 
-testConnection();
+        // Bağlantıyı kapat
+        connection.end((err) => {
+            if (err) {
+                console.error('Bağlantı kapatma hatası:', err);
+                return;
+            }
+            console.log('MySQL bağlantısı başarıyla kapatıldı.');
+        });
+    });
+});
